@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перенаправление по значению</title>
+</head>
+<body>
+
+    <h1>Недо браузер</h1>
+    <label for="inputValue">Введите значение:</label>
+    <input type="text" id="inputValue">
+    <button onclick="redirectToInputValue()">Перенаправить</button>
+    <h2>Список полезных сайтов:</h2>
+    <h3>Поисковые системы</h3>
+    <p>https://www.google.com/</p>
+    <p>https://www.bing.com/</p>
+
+
+
+    <script>
+        function redirectToInputValue() {
+            // Получаем значение из input
+            var inputValue = document.getElementById('inputValue').value;
+
+            // Перенаправляем на страницу с использованием значения из input
+            window.location.href = inputValue;
+        }
+    </script>
+
+</body>
+</html>
